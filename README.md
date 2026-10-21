@@ -1,4 +1,25 @@
 > [!IMPORTANT]
+> i have stopped development on this repo.
+>
+> why? mainly stuff unrelated to this project and that i wont speak of here.
+> i had managed to get linux to boot in an uncommited branch, but had been 
+> unable to get GPU up. i've been trying to get GPU to work but i
+> just cant manage to do so. ive been trying to read UART from the console 
+> to aid in development but for whatever reason UART on my console just doesnt work,
+> no clue as to why, which means i've just been brute forcing it, which if you've 
+> ever done software development on something not well documented,
+> you know is a pain in the ass, and i just dont have the energy to keep doing it, 
+> i might return to this repo at some point in the future, but no promises.
+>
+> i also apologize to everyone who found this repo, tried it and it failed,
+> just for them to think it was them doing it wrong just to try to troubleshoot
+> for an hour and a half, i would commit the uncommited branch to this repo but
+> its in a state where every couple of runs it completly bricks the console
+> and requires a factory reset to recovery from.
+>
+> and again, im sorry.
+
+> [!IMPORTANT]
 > this project is still **VERY** Work-in-progress, currently only 13.20 is supported
 > until i can get offsets for other FW's / full linux support
 
@@ -77,10 +98,10 @@ the output will be at `bin/pLinux5-NG.elf`.
 
 on linux/unix, use:
 ```bash
-# (from the area with the repo + pLinux5-NG.elf) 
+# (from the area with the repo + pLinux5-NG.elf)
 cd scripts/
 chmod +x send.sh
-./send.sh PS5_IP=<Playstation 5s IP> PS5_PORT=9021
+PS5_IP=<Playstation 5s IP> ./send.sh
 ```
 on windows, if using powershell, use:
 ```powershell
